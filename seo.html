@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>SEO Services | testofire IT Solution</title>
+    <meta name="description"
+        content="Rank higher on Google with testofire, a top SEO company. We offer technical SEO, local SEO, eCommerce SEO, and content strategies that drive growth.">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/meanmenu.min.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="assets/css/color-switcher-design.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <style>
+        .svc-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 32px 26px;
+            border: 1px solid #e8ecef;
+            transition: all .4s;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, .04);
+            height: 100%
+        }
+
+        .svc-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 40px rgba(0, 13, 255, .12);
+            border-color: #000DFF
+        }
+
+        .svc-icon {
+            width: 52px;
+            height: 52px;
+            background: linear-gradient(180deg, #000DFF 0%, #c115ec 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 18px
+        }
+
+        .proc-card {
+            background: #fff;
+            border-radius: 14px;
+            padding: 28px 22px;
+            border-left: 4px solid #000DFF;
+            box-shadow: 0 2px 16px rgba(0, 0, 0, .06);
+            height: 100%
+        }
+
+        .proc-num {
+            font-size: 36px;
+            font-weight: 800;
+            color: #000DFF;
+            opacity: .2;
+            font-family: 'Outfit', sans-serif;
+            line-height: 1;
+            margin-bottom: 6px
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #e8ecef
+        }
+
+        .faq-btn {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 18px 0;
+            text-align: left;
+            font-size: 15px;
+            font-weight: 600;
+            color: #1a1a2e;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Outfit', sans-serif
+        }
+
+        .faq-btn:hover {
+            color: #000DFF
+        }
+
+        .faq-body {
+            padding: 0 0 16px;
+            font-size: 14.5px;
+            color: #555;
+            line-height: 1.7;
+            display: none
+        }
+
+        .faq-body.open {
+            display: block
+        }
+
+        .cta-band {
+            background: linear-gradient(135deg, #000DFF 0%, #c115ec 100%);
+            border-radius: 22px;
+            padding: 56px 40px;
+            text-align: center;
+            color: #fff
+        }
+
+        .btn-wh {
+            background: #fff;
+            color: #000DFF;
+            padding: 13px 30px;
+            border-radius: 8px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-block;
+            transition: all .3s;
+            font-family: 'Outfit', sans-serif
+        }
+
+        .btn-wh:hover {
+            background: #f0f0ff;
+            color: #000DFF;
+            transform: translateY(-2px)
+        }
+
+        .btn-ol {
+            background: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+            padding: 13px 30px;
+            border-radius: 8px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-block;
+            transition: all .3s;
+            font-family: 'Outfit', sans-serif;
+            margin-left: 10px
+        }
+
+        .btn-ol:hover {
+            background: rgba(255, 255, 255, .15);
+            color: #fff
+        }
+
+        .why-item {
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+            margin-bottom: 20px
+        }
+
+        .why-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: linear-gradient(180deg, #000DFF 0%, #c115ec 100%);
+            flex-shrink: 0;
+            margin-top: 5px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div class="cursor"></div>
+        <div class="cursor-follower"></div>
+        <div class="preloader"></div>
+
+        <!-- Header -->
+        <header class="main-header header-style-one">
+            <div class="header-top">
+                <div class="auto-container">
+                    <div class="inner-container">
+                        <div class="d-flex justify-content-between align-items-center flex-wrap">
+                            <div class="left-box">
+                                <ul class="header-top_list d-flex flex-wrap">
+                                    <li><span class="icon fa-classic fa-solid fa-envelope fa-fw"></span><a
+                                            href="mailto:info@testofire.com">info@testofire.com</a></li>
+                                    <li><span class="icon fa-classic fa-solid fa-location-dot fa-fw"></span>24 Street,
+                                        New York, USA</li>
+                                </ul>
+                            </div>
+                            <div class="right-box">
+                                <div class="header-top_socials">
+                                    <div class="social-inner">
+                                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                        <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                                        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-lower">
+                <div class="auto-container">
+                    <div class="inner-container">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="logo-box">
+                                <div class="logo"><a href="index.html"><img src="assets/images/logo.svg" alt=""
+                                            title="testofire"></a></div>
+                            </div>
+                            <div class="nav-outer d-flex flex-wrap">
+                                <nav class="main-menu navbar-expand-md">
+                                    <div class="navbar-header">
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                            data-target="#nav1"><span class="icon-bar"></span><span
+                                                class="icon-bar"></span><span class="icon-bar"></span></button>
+                                    </div>
+                                    <div class="navbar-collapse collapse clearfix" id="nav1">
+                                        <ul class="navigation clearfix">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li class="dropdown current"><a href="services.html">Services</a>
+                                                <ul>
+                                                    <li><a href="services.html">All Services</a></li>
+                                                    <li><a href="web-development.html">Web Development</a></li>
+                                                    <li><a href="ecommerce.html">eCommerce Development</a></li>
+                                                    <li><a href="website-support.html">Website Support</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="outer-box d-flex align-items-center flex-wrap">
+                                <div class="search-box-btn search-box-outer"><span class="icon fa fa-search"></span>
+                                </div>
+                                <div class="main-header_button"><a href="contact.html"
+                                        class="theme-btn btn-style-one"><span class="btn-wrap"><span
+                                                class="text-one">Get Started</span><span class="text-two">Get
+                                                Started</span></span></a></div>
+                                <div class="mobile-nav-toggler"><span
+                                        class="icon fa-classic fa-solid fa-bars fa-fw"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu">
+                <div class="menu-backdrop"></div>
+                <div class="close-btn"><span class="icon fa-xmark"></span></div>
+                <nav class="menu-box">
+                    <div class="nav-logo"><a href="index.html"><img src="assets/images/mobile-logo.svg" alt=""></a>
+                    </div>
+                    <div class="menu-outer"></div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Page Title -->
+        <section class="page-title">
+            <div class="page-title_big-title">SEO Agency</div>
+            <div class="page-title_bg-image" style="background-image:url(assets/images/background/3.jpg)"></div>
+            <div class="page-title_shape-one" style="background-image:url(assets/images/background/page-title-1.png)">
+            </div>
+            <div class="page-title_shape-two" style="background-image:url(assets/images/background/page-title-2.png)">
+            </div>
+            <div class="auto-container">
+                <h1>Search Engine Optimization</h1>
+                <ul class="bread-crumb clearfix">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li>SEO Services</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Intro -->
+        <section style="padding:80px 0;background:#fff">
+            <div class="auto-container">
+                <div class="row clearfix align-items-center">
+                    <div class="col-lg-7 col-md-12">
+                        <div class="sec-title title-anim">
+                            <div class="sec-title_title">SEO Services<div class="sec-title_dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </div>
+                            <h2 class="sec-title_heading">ROI-Driven SEO Services That <span>Rank Higher</span></h2>
+                        </div>
+                        <p style="font-size:16px;line-height:1.8;color:#555;margin-bottom:20px">We specialize in SEO for
+                            businesses as well as international markets. Whether you're targeting Delhi, Dubai, or
+                            Dallas — we’ve done it.</p>
+                        <p style="font-size:16px;line-height:1.8;color:#555;margin-bottom:30px">We don’t just chase
+                            keywords. We build strategies that improve visibility, bring in leads, and help you convert
+                            them. Our SEO is built for Google’s core updates. No shortcuts, no black-hat tricks — just
+                            clean, scalable growth.</p>
+                        <div class="d-flex flex-wrap" style="gap:14px">
+                            <a href="contact.html" class="theme-btn btn-style-one"><span class="btn-wrap"><span
+                                        class="text-one">Start a Project</span><span class="text-two">Start a
+                                        Project</span></span></a>
+                            <a href="about.html" class="theme-btn btn-style-three"><span class="btn-wrap"><span
+                                        class="text-one">About Us</span><span class="text-two">About
+                                        Us</span></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 text-center" style="margin-top:32px">
+                        <div
+                            style="background:linear-gradient(135deg,#000DFF 0%,#c115ec 100%);border-radius:22px;padding:48px 36px;color:#fff">
+                            <div style="font-size:48px;font-weight:800;font-family:'Outfit',sans-serif">#1</div>
+                            <div style="font-size:15px;margin-bottom:22px;opacity:.9">Results-Driven SEO Search Agency
+                            </div>
+                            <div style="display:flex;justify-content:space-around;flex-wrap:wrap;gap:16px">
+                                <div>
+                                    <div style="font-size:26px;font-weight:700">300%</div>
+                                    <div style="font-size:12px;opacity:.85">Traffic Growth</div>
+                                </div>
+                                <div>
+                                    <div style="font-size:26px;font-weight:700">1st</div>
+                                    <div style="font-size:12px;opacity:.85">Page Rankings</div>
+                                </div>
+                                <div>
+                                    <div style="font-size:26px;font-weight:700">White</div>
+                                    <div style="font-size:12px;opacity:.85">Hat Strategies</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section style="padding:80px 0;background:#f4f6f8">
+            <div class="auto-container">
+                <div style="text-align:center;margin-bottom:52px">
+                    <span
+                        style="font-size:13px;color:#000DFF;font-weight:600;text-transform:uppercase;letter-spacing:1px">Our
+                        Capabilities</span>
+                    <h2
+                        style="font-size:38px;font-weight:800;color:#1a1a2e;font-family:'Outfit',sans-serif;margin-top:10px">
+                        Our SEO <span
+                            style="background:#000DFF;color:#fff;padding:2px 12px;border-radius:5px">Services</span>
+                    </h2>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom:26px">
+                        <div class="svc-card">
+                            <div class="svc-icon">⚙️</div>
+                            <h4
+                                style="font-size:19px;font-weight:700;color:#1a1a2e;margin-bottom:10px;font-family:'Outfit',sans-serif">
+                                Technical SEO</h4>
+                            <p style="font-size:14px;color:#555;line-height:1.7;margin-bottom:8px">🌟 We fix structural
+                                issues, improve crawlability, speed, and indexation to meet Google's evolving technical
+                                standards.</p>
+                            <p style="font-size:14px;color:#555;line-height:1.7;margin:0">🔥 From schema to core web
+                                vitals, we optimize everything behind the scenes.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom:26px">
+                        <div class="svc-card">
+                            <div class="svc-icon">📍</div>
+                            <h4
+                                style="font-size:19px;font-weight:700;color:#1a1a2e;margin-bottom:10px;font-family:'Outfit',sans-serif">
+                                Local SEO</h4>
+                            <p style="font-size:14px;color:#555;line-height:1.7;margin-bottom:8px">🌟 Put your business
+                                in front of local customers on Google Maps and search results.</p>
+                            <p style="font-size:14px;color:#555;line-height:1.7;margin:0">🔥 We manage GMB profiles,
+                                citations, local content, and review strategies.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom:26px">
+                        <div class="svc-card">
+                            <div class="svc-icon">🛒</div>
+                            <h4
+                                style="font-size:19px;font-weight:700;color:#1a1a2e;margin-bottom:10px;font-family:'Outfit',sans-serif">
+                                eCommerce SEO</h4>
+                            <p style="font-size:14px;color:#555;line-height:1.7;margin-bottom:8px">🌟 We optimize
+                                product visibility on marketplaces like Amazon, Flipkart, and Shopify.</p>
+                            <p style="font-size:14px;color:#555;line-height:1.7;margin:0">🔥 From metadata to structured
+                                product markup, we boost discoverability and sales.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom:26px">
+                        <div class="svc-card">
+                            <div class="svc-icon">🌍</div>
+                            <h4
+                                style="font-size:19px;font-weight:700;color:#1a1a2e;margin-bottom:10px;font-family:'Outfit',sans-serif">
+                                International SEO</h4>
+                            <p style="font-size:14px;color:#555;line-height:1.7;margin-bottom:8px">🌟 Expand beyond
+                                borders with SEO tailored to global search engines, regions, and languages.</p>
+                            <p style="font-size:14px;color:#555;line-height:1.7;margin:0">🔥 We manage hreflang,
+                                geo-tagging, localization, and content structuring for multiple countries.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom:26px">
+                        <div class="svc-card">
+                            <div class="svc-icon">🔗</div>
+                            <h4
+                                style="font-size:19px;font-weight:700;color:#1a1a2e;margin-bottom:10px;font-family:'Outfit',sans-serif">
+                                Link Building</h4>
+                            <p style="font-size:14px;color:#555;line-height:1.7;margin-bottom:8px">🌟 Earn
+                                high-authority backlinks from trusted Indian and international publishers.</p>
+                            <p style="font-size:14px;color:#555;line-height:1.7;margin:0">🔥 We focus on white-hat
+                                outreach, guest posts, and niche placements — no shortcuts, no spam.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom:26px">
+                        <div class="svc-card">
+                            <div class="svc-icon">📊</div>
+                            <h4
+                                style="font-size:19px;font-weight:700;color:#1a1a2e;margin-bottom:10px;font-family:'Outfit',sans-serif">
+                                SEO Consultants</h4>
+                            <p style="font-size:14px;color:#555;line-height:1.7;margin-bottom:8px">🌟 Get expert
+                                insights, SEO audits, competitor analysis, and growth plans.</p>
+                            <p style="font-size:14px;color:#555;line-height:1.7;margin:0">🔥 Ideal for startups,
+                                marketing teams, and brands needing custom direction.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process -->
+        <section style="padding:80px 0;background:#fff">
+            <div class="auto-container">
+                <div style="text-align:center;margin-bottom:52px">
+                    <span
+                        style="font-size:13px;color:#000DFF;font-weight:600;text-transform:uppercase;letter-spacing:1px">Our
+                        Process</span>
+                    <h2
+                        style="font-size:38px;font-weight:800;color:#1a1a2e;font-family:'Outfit',sans-serif;margin-top:10px">
+                        Our SEO Execution Process</h2>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-3 col-md-6 col-sm-12" style="margin-bottom:24px">
+                        <div class="proc-card">
+                            <div class="proc-num">01</div>
+                            <div style="font-size:28px;margin-bottom:10px">🧩</div>
+                            <h4
+                                style="font-size:16px;font-weight:700;color:#1a1a2e;margin-bottom:8px;font-family:'Outfit',sans-serif">
+                                Research &amp; SEO Audit</h4>
+                            <p style="font-size:13.5px;color:#666;line-height:1.7;margin:0">We begin with technical
+                                audits, keyword research, and competitor gap analysis to uncover ranking opportunities.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12" style="margin-bottom:24px">
+                        <div class="proc-card">
+                            <div class="proc-num">02</div>
+                            <div style="font-size:28px;margin-bottom:10px">✍️</div>
+                            <h4
+                                style="font-size:16px;font-weight:700;color:#1a1a2e;margin-bottom:8px;font-family:'Outfit',sans-serif">
+                                Strategy &amp; On-Page</h4>
+                            <p style="font-size:13.5px;color:#666;line-height:1.7;margin:0">Our team optimizes your site
+                                architecture, title tags, headings, internal links, and content for target keywords.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12" style="margin-bottom:24px">
+                        <div class="proc-card">
+                            <div class="proc-num">03</div>
+                            <div style="font-size:28px;margin-bottom:10px">📈</div>
+                            <h4
+                                style="font-size:16px;font-weight:700;color:#1a1a2e;margin-bottom:8px;font-family:'Outfit',sans-serif">
+                                Content &amp; Link Building</h4>
+                            <p style="font-size:13.5px;color:#666;line-height:1.7;margin:0">We publish high-quality,
+                                keyword-rich blogs and secure ethical backlinks through manual outreach and authority
+                                building.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12" style="margin-bottom:24px">
+                        <div class="proc-card">
+                            <div class="proc-num">04</div>
+                            <div style="font-size:28px;margin-bottom:10px">📊</div>
+                            <h4
+                                style="font-size:16px;font-weight:700;color:#1a1a2e;margin-bottom:8px;font-family:'Outfit',sans-serif">
+                                Tracking &amp; Reporting</h4>
+                            <p style="font-size:13.5px;color:#666;line-height:1.7;margin:0">Monthly reports include
+                                traffic, rankings, and leads. We use the data to adjust, improve, and scale campaigns.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section style="padding:80px 0;background:#f4f6f8">
+            <div class="auto-container">
+                <div class="row clearfix align-items-center">
+                    <div class="col-lg-6 col-md-12" style="margin-bottom:40px">
+                        <div class="sec-title title-anim">
+                            <div class="sec-title_title">Why Us<div class="sec-title_dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </div>
+                            <h2 class="sec-title_heading">Why Choose testofire for <span>SEO</span></h2>
+                        </div>
+                        <p style="font-size:15px;color:#555;line-height:1.8;margin:20px 0 28px">You'll always know what
+                            we’re working on, why, and what’s next. Clear reports, open communication, and results that
+                            speak for themselves.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="why-item">
+                            <div class="why-dot"></div>
+                            <div><strong style="color:#1a1a2e">Sustainable Rankings</strong><br><span
+                                    style="color:#555;font-size:14px">We follow Google guidelines and use only white-hat
+                                    SEO techniques for long-term growth.</span></div>
+                        </div>
+                        <div class="why-item">
+                            <div class="why-dot"></div>
+                            <div><strong style="color:#1a1a2e">Conversion Focused</strong><br><span
+                                    style="color:#555;font-size:14px">We don't focus on vanity traffic; we target
+                                    high-intent keywords that actually drive sales.</span></div>
+                        </div>
+                        <div class="why-item">
+                            <div class="why-dot"></div>
+                            <div><strong style="color:#1a1a2e">Content Expertise</strong><br><span
+                                    style="color:#555;font-size:14px">Built-in content planning, writing, and hands-on
+                                    link-building placements.</span></div>
+                        </div>
+                        <div class="why-item" style="margin-bottom:0">
+                            <div class="why-dot"></div>
+                            <div><strong style="color:#1a1a2e">Global & Local Scale</strong><br><span
+                                    style="color:#555;font-size:14px">Support for multi-language, hreflang
+                                    implementation, and deep local optimizations.</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section style="padding:80px 0;background:#fff">
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <div class="col-lg-5 col-md-12" style="margin-bottom:40px">
+                        <div class="sec-title title-anim">
+                            <div class="sec-title_title">FAQ<div class="sec-title_dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </div>
+                            <h2 class="sec-title_heading">Have Any Questions About <span>SEO?</span></h2>
+                        </div>
+                        <p style="font-size:15px;color:#555;line-height:1.8;margin-top:16px">We focus on real business
+                            growth, not vanity metrics. Our transparent process, content-first approach, and trackable
+                            results make us a top choice across industries.</p>
+                        <div style="margin-top:26px"><a href="contact.html" class="theme-btn btn-style-one"><span
+                                    class="btn-wrap"><span class="text-one">Ask Us Anything</span><span
+                                        class="text-two">Ask Us Anything</span></span></a></div>
+                    </div>
+                    <div class="col-lg-7 col-md-12">
+                        <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">How long does SEO take?
+                                <span>+</span></button>
+                            <div class="faq-body">SEO is a long-term strategy. Most clients start seeing initial results
+                                in 3–4 months, with major growth around the 6-month mark.</div>
+                        </div>
+                        <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">Do you follow safe SEO
+                                practices? <span>+</span></button>
+                            <div class="faq-body">Absolutely. We follow Google’s guidelines and use white-hat SEO
+                                techniques that ensure long-term, sustainable risk-free rankings.</div>
+                        </div>
+                        <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">Is content writing
+                                included? <span>+</span></button>
+                            <div class="faq-body">Yes. Our SEO service includes content writing, blog planning, and
+                                hands-on backlink building through outreach and guest posting.</div>
+                        </div>
+                        <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">Can you help with
+                                International SEO? <span>+</span></button>
+                            <div class="faq-body">Yes. Our international SEO strategies support multiple languages,
+                                hreflang implementation, and country-specific targeting for global reach.</div>
+                        </div>
+                        <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">SEO vs PPC: Which is
+                                better? <span>+</span></button>
+                            <div class="faq-body">Both work together. SEO builds long-term, cost-effective traffic,
+                                while PPC offers instant results. We help you balance both for better ROI.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section style="padding:0 0 80px">
+            <div class="auto-container">
+                <div class="cta-band">
+                    <h2
+                        style="font-size:38px;font-weight:800;margin-bottom:14px;font-family:'Outfit',sans-serif;color:#ffffff;">
+                        Ready to Outrank Your Competitors?
+                    </h2>
+                    <p
+                        style="font-size:16px;opacity:.9;margin-bottom:32px;max-width:520px;margin-left:auto;margin-right:auto;color:#ffffff;">
+                        Get a strategy powered by experience — not guesswork. Our data-led digital marketing campaigns
+                        drive real traffic, leads, and lasting growth.</p>
+                    <a href="contact.html" class="btn-wh">😊 Contact Us</a>
+                    <a href="about.html" class="btn-ol">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="main-footer_bg-color"></div>
+            <div class="main-footer_vector" style="background-image:url(assets/images/icons/vector-3.png)"></div>
+            <div class="auto-container">
+                <div class="inner-container">
+                    <div class="footer-logo"><a href="index.html"><img src="assets/images/footer-logo.svg" alt=""></a>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
+                        <div class="footer-text">We prioritize collaboration <br>With our clients</div>
+                        <div class="footer-social_box">
+                            <a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-discuss"><span class="up-down_animation">let's discuss!</span></div>
+                    <ul class="footer-contact_list d-flex justify-content-end">
+                        <li><a href="mailto:info@testofire.com">info@testofire.com</a></li>
+                        <li><a href="tel:+123-456-789-00">+(123) 456 789 00</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="auto-container">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
+                        <div class="main-footer_copyright">testofire &copy; 2026. All Rights Reserved.</div>
+                        <nav style="display:flex;gap:20px">
+                            <a href="index.html" style="color:#aaa;font-size:13px;text-decoration:none">Home</a>
+                            <a href="services.html" style="color:#aaa;font-size:13px;text-decoration:none">Services</a>
+                            <a href="about.html" style="color:#aaa;font-size:13px;text-decoration:none">About</a>
+                            <a href="contact.html" style="color:#aaa;font-size:13px;text-decoration:none">Contact</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="search-popup">
+            <div class="color-layer"></div><button class="close-search"><span class="fa-xmark"></span></button>
+            <form method="post" action="index.html">
+                <div class="form-group"><input type="search" name="q" placeholder="Search Here" required=""><button
+                        class="fa fa-solid fa-magnifying-glass fa-fw" type="submit"></button></div>
+            </form>
+        </div>
+    </div>
+    <div class="progress-wrap"><svg class="progress-circle svg-content" width="100%" height="100%"
+            viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg></div>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/appear.js"></script>
+    <script src="assets/js/parallax.min.js"></script>
+    <script src="assets/js/tilt.jquery.min.js"></script>
+    <script src="assets/js/jquery.paroller.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/backtotop.js"></script>
+    <script src="assets/js/odometer.js"></script>
+    <script src="assets/js/jquery.countdown.js"></script>
+    <script src="assets/js/parallax-scroll.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/SplitText.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/ScrollSmoother.min.js"></script>
+    <script src="assets/js/typeit.js"></script>
+    <script src="assets/js/jquery.marquee.min.js"></script>
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <script src="assets/js/nav-tool.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/element-in-view.js"></script>
+    <script src="assets/js/color-settings.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        function toggleFaq(btn) { var a = btn.nextElementSibling, s = btn.querySelector('span'); if (a.classList.contains('open')) { a.classList.remove('open'); s.textContent = '+' } else { document.querySelectorAll('.faq-body.open').forEach(function (x) { x.classList.remove('open') }); document.querySelectorAll('.faq-btn span').forEach(function (x) { x.textContent = '+' }); a.classList.add('open'); s.textContent = '−' } }
+    </script>
+</body>
+
+</html>

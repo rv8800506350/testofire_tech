@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Web Development Services | testofire IT Solution</title>
+    <meta name="description"
+        content="Custom web development services — fast, secure, and scalable websites using WordPress, Laravel, React.js and more.">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/meanmenu.min.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="assets/css/color-switcher-design.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <style>
+        .svc-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 32px 26px;
+            border: 1px solid #e8ecef;
+            transition: all .4s;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, .04);
+            height: 100%
+        }
+
+        .svc-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 40px rgba(0, 13, 255, .12);
+            border-color: #000DFF
+        }
+
+        .svc-icon {
+            width: 52px;
+            height: 52px;
+            background: linear-gradient(180deg, #000DFF 0%, #c115ec 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 18px
+        }
+
+        .proc-card {
+            background: #fff;
+            border-radius: 14px;
+            padding: 28px 22px;
+            border-left: 4px solid #000DFF;
+            box-shadow: 0 2px 16px rgba(0, 0, 0, .06);
+            height: 100%
+        }
+
+        .proc-num {
+            font-size: 36px;
+            font-weight: 800;
+            color: #000DFF;
+            opacity: .2;
+            font-family: 'Outfit', sans-serif;
+            line-height: 1;
+            margin-bottom: 6px
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #e8ecef
+        }
+
+        .faq-btn {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 18px 0;
+            text-align: left;
+            font-size: 15px;
+            font-weight: 600;
+            color: #1a1a2e;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Outfit', sans-serif
+        }
+
+        .faq-btn:hover {
+            color: #000DFF
+        }
+
+        .faq-body {
+            padding: 0 0 16px;
+            font-size: 14.5px;
+            color: #555;
+            line-height: 1.7;
+            display: none
+        }
+
+        .faq-body.open {
+            display: block
+        }
+
+        .cta-band {
+            background: linear-gradient(135deg, #000DFF 0%, #c115ec 100%);
+            border-radius: 22px;
+            padding: 56px 40px;
+            text-align: center;
+            color: #fff
+        }
+
+        .btn-wh {
+            background: #fff;
+            color: #000DFF;
+            padding: 13px 30px;
+            border-radius: 8px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-block;
+            transition: all .3s;
+            font-family: 'Outfit', sans-serif
+        }
+
+        .btn-wh:hover {
+            background: #f0f0ff;
+            color: #000DFF;
+            transform: translateY(-2px)
+        }
+
+        .btn-ol {
+            background: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+            padding: 13px 30px;
+            border-radius: 8px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-block;
+            transition: all .3s;
+            font-family: 'Outfit', sans-serif;
+            margin-left: 10px
+        }
+
+        .btn-ol:hover {
+            background: rgba(255, 255, 255, .15);
+            color: #fff
+        }
+
+        .why-item {
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+            margin-bottom: 20px
+        }
+
+        .why-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: linear-gradient(180deg, #000DFF 0%, #c115ec 100%);
+            flex-shrink: 0;
+            margin-top: 5px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div class="cursor"></div>
+        <div class="cursor-follower"></div>
+        <div class="preloader"></div>
+
+        <!-- Header -->
+        <header class="main-header header-style-one">
+            <div class="header-top">
+                <div class="auto-container">
+                    <div class="inner-container">
+                        <div class="d-flex justify-content-between align-items-center flex-wrap">
+                            <div class="left-box">
+                                <ul class="header-top_list d-flex flex-wrap">
+                                    <li><span class="icon fa-classic fa-solid fa-envelope fa-fw"></span><a
+                                            href="mailto:info@testofire.com">info@testofire.com</a></li>
+                                    <li><span class="icon fa-classic fa-solid fa-location-dot fa-fw"></span>24 Street,
+                                        New York, USA</li>
+                                </ul>
+                            </div>
+                            <div class="right-box">
+                                <div class="header-top_socials">
+                                    <div class="social-inner">
+                                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                        <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                                        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-lower">
+                <div class="auto-container">
+                    <div class="inner-container">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="logo-box">
+                                <div class="logo"><a href="index.html"><img src="assets/images/logo.svg" alt=""
+                                            title="testofire"></a></div>
+                            </div>
+                            <div class="nav-outer d-flex flex-wrap">
+                                <nav class="main-menu navbar-expand-md">
+                                    <div class="navbar-header">
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                            data-target="#nav1"><span class="icon-bar"></span><span
+                                                class="icon-bar"></span><span class="icon-bar"></span></button>
+                                    </div>
+                                    <div class="navbar-collapse collapse clearfix" id="nav1">
+                                        <ul class="navigation clearfix">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li class="dropdown current"><a href="services.html">Services</a>
+                                                <ul>
+                                                    <li><a href="services.html">All Services</a></li>
+                                                    <li class="current"><a href="web-development.html">Web
+                                                            Development</a></li>
+                                                    <li><a href="ecommerce.html">eCommerce Development</a></li>
+                                                    <li><a href="website-support.html">Website Support</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="outer-box d-flex align-items-center flex-wrap">
+                                <div class="search-box-btn search-box-outer"><span class="icon fa fa-search"></span>
+                                </div>
+                                <div class="main-header_button"><a href="contact.html"
+                                        class="theme-btn btn-style-one"><span class="btn-wrap"><span
+                                                class="text-one">Get Started</span><span class="text-two">Get
+                                                Started</span></span></a></div>
+                                <div class="mobile-nav-toggler"><span
+                                        class="icon fa-classic fa-solid fa-bars fa-fw"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu">
+                <div class="menu-backdrop"></div>
+                <div class="close-btn"><span class="icon fa-xmark"></span></div>
+                <nav class="menu-box">
+                    <div class="nav-logo"><a href="index.html"><img src="assets/images/mobile-logo.svg" alt=""></a>
+                    </div>
+                    <div class="menu-outer"></div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Page Title -->
+        <section class="page-title">
+            <div class="page-title_big-title">Web Development</div>
+            <div class="page-title_bg-image" style="background-image:url(assets/images/background/3.jpg)"></div>
+            <div class="page-title_shape-one" style="background-image:url(assets/images/background/page-title-1.png)">
+            </div>
+            <div class="page-title_shape-two" style="background-image:url(assets/images/background/page-title-2.png)">
+            </div>
+            <div class="auto-container">
+                <h1>Web Development Services</h1>
+                <ul class="bread-crumb clearfix">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li>Web Development</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Intro -->
+        <section style="padding:80px 0;background:#fff">
+            <div class="auto-container">
+                <div class="row clearfix align-items-center">
+                    <div class="col-lg-7 col-md-12">
+                        <div class="sec-title title-anim">
+                            <div class="sec-title_title">Web Development<div class="sec-title_dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </div>
+                            <h2 class="sec-title_heading">Custom Web Development That <span>Builds</span> Your Digital
+                                Future</h2>
+                        </div>
+                        <p style="font-size:16px;line-height:1.8;color:#555;margin-bottom:20px">We don't just build
+                            websites — we build reliable digital infrastructure. Our team crafts tailor-made solutions
+                            that align with your business goals using secure coding standards, mobile-first frameworks,
+                            and Google's best practices.</p>
+                        <p style="font-size:16px;line-height:1.8;color:#555;margin-bottom:30px">Our code is clean, our
+                            delivery is fast, and our support is ongoing. Whether you're a startup, SME, or enterprise,
+                            we have the right solution for your scale.</p>
+                        <div class="d-flex flex-wrap" style="gap:14px">
+                            <a href="contact.html" class="theme-btn btn-style-one"><span class="btn-wrap"><span
+                                        class="text-one">Start a Project</span><span class="text-two">Start a
+                                        Project</span></span></a>
+                            <a href="about.html" class="theme-btn btn-style-three"><span class="btn-wrap"><span
+                                        class="text-one">About Us</span><span class="text-two">About
+                                        Us</span></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 text-center" style="margin-top:32px">
+                        <div
+                            style="background:linear-gradient(135deg,#000DFF 0%,#c115ec 100%);border-radius:22px;padding:48px 36px;color:#fff">
+                            <div style="font-size:48px;font-weight:800;font-family:'Outfit',sans-serif">10+</div>
+                            <div style="font-size:15px;margin-bottom:22px;opacity:.9">Years Building Digital Experiences
+                            </div>
+                            <div style="display:flex;justify-content:space-around;flex-wrap:wrap;gap:16px">
+                                <div>
+                                    <div style="font-size:26px;font-weight:700">200+</div>
+                                    <div style="font-size:12px;opacity:.85">Projects Done</div>
+                                </div>
+                                <div>
+                                    <div style="font-size:26px;font-weight:700">98%</div>
+                                    <div style="font-size:12px;opacity:.85">Satisfaction</div>
+                                </div>
+                                <div>
+                                    <div style="font-size:26px;font-weight:700">24/7</div>
+                                    <div style="font-size:12px;opacity:.85">Support</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section style="padding:80px 0;background:#f4f6f8">
+            <div class="auto-container">
+                <div style="text-align:center;margin-bottom:52px">
+                    <span
+                        style="font-size:13px;color:#000DFF;font-weight:600;text-transform:uppercase;letter-spacing:1px">What
+                        We Build</span>
+                    <h2
+                        style="font-size:38px;font-weight:800;color:#1a1a2e;font-family:'Outfit',sans-serif;margin-top:10px">
+                        Our Web Development <span
+                            style="background:#000DFF;color:#fff;padding:2px 12px;border-radius:5px">Services</span>
+                    </h2>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom:26px">
+                        <div class="svc-card">
+                            <div class="svc-icon">⚡</div>
+                            <h4
+                                style="font-size:19px;font-weight:700;color:#1a1a2e;margin-bottom:10px;font-family:'Outfit',sans-serif">
+                                Laravel Development</h4>
+                            <p style="font-size:14px;color:#555;line-height:1.7;margin-bottom:8px">⭐ Robust, scalable,
+                                and secure PHP framework for advanced functionality.</p>
+                            <p style="font-size:14px;color:#555;line-height:1.7;margin:0">🔥 Ideal for custom portals,
+                                CRMs, B2B dashboards, and enterprise apps.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom:26px">
+                        <div class="svc-card">
+                            <div class="svc-icon">🌐</div>
+                            <h4
+                                style="font-size:19px;font-weight:700;color:#1a1a2e;margin-bottom:10px;font-family:'Outfit',sans-serif">
+                                WordPress Development</h4>
+                            <p style="font-size:14px;color:#555;line-height:1.7;margin-bottom:8px">⭐ Flexible and fast
+                                development for content-rich sites and marketing websites.</p>
+                            <p style="font-size:14px;color:#555;line-height:1.7;margin:0">🔥 SEO-friendly, responsive
+                                WordPress sites with custom themes and plugins.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom:26px">
+                        <div class="svc-card">
+                            <div class="svc-icon">🏢</div>
+                            <h4
+                                style="font-size:19px;font-weight:700;color:#1a1a2e;margin-bottom:10px;font-family:'Outfit',sans-serif">
+                                Enterprise Development</h4>
+                            <p style="font-size:14px;color:#555;line-height:1.7;margin-bottom:8px">⭐ High-performance
+                                solutions for large-scale businesses and multi-department platforms.</p>
+                            <p style="font-size:14px;color:#555;line-height:1.7;margin:0">🔥 Optimized for security,
+                                modularity, and long-term scalability.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom:26px">
+                        <div class="svc-card">
+                            <div class="svc-icon">🛒</div>
+                            <h4
+                                style="font-size:19px;font-weight:700;color:#1a1a2e;margin-bottom:10px;font-family:'Outfit',sans-serif">
+                                eCommerce Development</h4>
+                            <p style="font-size:14px;color:#555;line-height:1.7;margin-bottom:8px">⭐ Secure,
+                                conversion-focused online stores via WooCommerce, Shopify, or custom code.</p>
+                            <p style="font-size:14px;color:#555;line-height:1.7;margin:0">🔥 Integrated with payment
+                                gateways, inventory, and user-friendly backend.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom:26px">
+                        <div class="svc-card">
+                            <div class="svc-icon">🔧</div>
+                            <h4
+                                style="font-size:19px;font-weight:700;color:#1a1a2e;margin-bottom:10px;font-family:'Outfit',sans-serif">
+                                Web Application Development</h4>
+                            <p style="font-size:14px;color:#555;line-height:1.7;margin-bottom:8px">⭐ From SaaS to
+                                portals, we build dynamic web apps tailored to your business model.</p>
+                            <p style="font-size:14px;color:#555;line-height:1.7;margin:0">🔥 Custom APIs, admin panels,
+                                dashboards, and role management.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom:26px">
+                        <div class="svc-card">
+                            <div class="svc-icon">💻</div>
+                            <h4
+                                style="font-size:19px;font-weight:700;color:#1a1a2e;margin-bottom:10px;font-family:'Outfit',sans-serif">
+                                JavaScript Development</h4>
+                            <p style="font-size:14px;color:#555;line-height:1.7;margin-bottom:8px">⭐ Front-end
+                                development using React.js, Vue.js, and Node.js.</p>
+                            <p style="font-size:14px;color:#555;line-height:1.7;margin:0">🔥 Fast, responsive, and
+                                interactive UI for modern digital experiences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process -->
+        <section style="padding:80px 0;background:#fff">
+            <div class="auto-container">
+                <div style="text-align:center;margin-bottom:52px">
+                    <span
+                        style="font-size:13px;color:#000DFF;font-weight:600;text-transform:uppercase;letter-spacing:1px">Our
+                        Process</span>
+                    <h2
+                        style="font-size:38px;font-weight:800;color:#1a1a2e;font-family:'Outfit',sans-serif;margin-top:10px">
+                        How We Build Your Website</h2>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-3 col-md-6 col-sm-12" style="margin-bottom:24px">
+                        <div class="proc-card">
+                            <div class="proc-num">01</div>
+                            <div style="font-size:28px;margin-bottom:10px">🧭</div>
+                            <h4
+                                style="font-size:16px;font-weight:700;color:#1a1a2e;margin-bottom:8px;font-family:'Outfit',sans-serif">
+                                Requirement Gathering &amp; Planning</h4>
+                            <p style="font-size:13.5px;color:#666;line-height:1.7;margin:0">We define your goals,
+                                features, integrations, and timeline through technical discovery.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12" style="margin-bottom:24px">
+                        <div class="proc-card">
+                            <div class="proc-num">02</div>
+                            <div style="font-size:28px;margin-bottom:10px">🧩</div>
+                            <h4
+                                style="font-size:16px;font-weight:700;color:#1a1a2e;margin-bottom:8px;font-family:'Outfit',sans-serif">
+                                Architecture &amp; Tech Stack Selection</h4>
+                            <p style="font-size:13.5px;color:#666;line-height:1.7;margin:0">We choose the right backend,
+                                frontend, and database solutions for your needs.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12" style="margin-bottom:24px">
+                        <div class="proc-card">
+                            <div class="proc-num">03</div>
+                            <div style="font-size:28px;margin-bottom:10px">🎨</div>
+                            <h4
+                                style="font-size:16px;font-weight:700;color:#1a1a2e;margin-bottom:8px;font-family:'Outfit',sans-serif">
+                                Development &amp; Coding</h4>
+                            <p style="font-size:13.5px;color:#666;line-height:1.7;margin:0">Agile sprints, modular code,
+                                API integrations, and third-party tool setup.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12" style="margin-bottom:24px">
+                        <div class="proc-card">
+                            <div class="proc-num">04</div>
+                            <div style="font-size:28px;margin-bottom:10px">🧪</div>
+                            <h4
+                                style="font-size:16px;font-weight:700;color:#1a1a2e;margin-bottom:8px;font-family:'Outfit',sans-serif">
+                                QA Testing &amp; Optimization</h4>
+                            <p style="font-size:13.5px;color:#666;line-height:1.7;margin:0">Cross-browser testing, Core
+                                Web Vitals, security audits, and bug fixing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section style="padding:80px 0;background:#f4f6f8">
+            <div class="auto-container">
+                <div class="row clearfix align-items-center">
+                    <div class="col-lg-6 col-md-12" style="margin-bottom:40px">
+                        <div class="sec-title title-anim">
+                            <div class="sec-title_title">Why Choose Us<div class="sec-title_dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </div>
+                            <h2 class="sec-title_heading">Why Choose testofire for <span>Web Development</span></h2>
+                        </div>
+                        <p style="font-size:15px;color:#555;line-height:1.8;margin:20px 0 28px">We're not just coders —
+                            we're digital partners who understand the business behind the code. No fluff, no confusion.
+                            Just clear timelines, clean code, and visible results.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="why-item">
+                            <div class="why-dot"></div>
+                            <div><strong style="color:#1a1a2e">Tailored Solutions</strong><br><span
+                                    style="color:#555;font-size:14px">We build exactly what your business needs — not
+                                    what's easiest to code.</span></div>
+                        </div>
+                        <div class="why-item">
+                            <div class="why-dot"></div>
+                            <div><strong style="color:#1a1a2e">Cross-Team Collaboration</strong><br><span
+                                    style="color:#555;font-size:14px">Our developers work side-by-side with UI/UX, SEO,
+                                    and content teams.</span></div>
+                        </div>
+                        <div class="why-item">
+                            <div class="why-dot"></div>
+                            <div><strong style="color:#1a1a2e">Built for the Long Haul</strong><br><span
+                                    style="color:#555;font-size:14px">From payment security to custom dashboards, we
+                                    build for scalability.</span></div>
+                        </div>
+                        <div class="why-item" style="margin-bottom:0">
+                            <div class="why-dot"></div>
+                            <div><strong style="color:#1a1a2e">Full Documentation &amp; Training</strong><br><span
+                                    style="color:#555;font-size:14px">We provide documentation, handover training, and
+                                    long-term update plans.</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section style="padding:80px 0;background:#fff">
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <div class="col-lg-5 col-md-12" style="margin-bottom:40px">
+                        <div class="sec-title title-anim">
+                            <div class="sec-title_title">FAQ<div class="sec-title_dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </div>
+                            <h2 class="sec-title_heading">Have Questions About <span>Web Development?</span></h2>
+                        </div>
+                        <p style="font-size:15px;color:#555;line-height:1.8;margin-top:16px">Get clarity on our process,
+                            timeline, tech stack, and what to expect.</p>
+                        <div style="margin-top:26px"><a href="contact.html" class="theme-btn btn-style-one"><span
+                                    class="btn-wrap"><span class="text-one">Ask Us Anything</span><span
+                                        class="text-two">Ask Us Anything</span></span></a></div>
+                    </div>
+                    <div class="col-lg-7 col-md-12">
+                        <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">What technologies do you
+                                specialize in? <span>+</span></button>
+                            <div class="faq-body">We specialize in Laravel, WordPress, WooCommerce, React.js, Node.js,
+                                Vue.js, and custom full-stack development.</div>
+                        </div>
+                        <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">How long does a project
+                                take? <span>+</span></button>
+                            <div class="faq-body">Simple WordPress sites take 1–2 weeks. Complex Laravel or React apps
+                                can take 3–6 weeks depending on features.</div>
+                        </div>
+                        <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">Can you integrate
+                                payment gateways? <span>+</span></button>
+                            <div class="faq-body">Absolutely. We integrate Razorpay, Paytm, Stripe, PayPal, and other
+                                gateways — fully secure.</div>
+                        </div>
+                        <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">Is SEO included in
+                                development? <span>+</span></button>
+                            <div class="faq-body">Yes. We build with clean code, schema markup, and speed aligned with
+                                Core Web Vitals and SEO best practices.</div>
+                        </div>
+                        <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">Do you offer post-launch
+                                support? <span>+</span></button>
+                            <div class="faq-body">Yes. We offer ongoing support, backups, feature upgrades, and
+                                performance monitoring packages.</div>
+                        </div>
+                        <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">Can you migrate an
+                                existing website? <span>+</span></button>
+                            <div class="faq-body">Yes. We handle site migration preserving your existing SEO value,
+                                data, and design integrity.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section style="padding:0 0 80px">
+            <div class="auto-container">
+                <div class="cta-band">
+                    <h2
+                        style="font-size:38px;font-weight:800;margin-bottom:14px;font-family:'Outfit',sans-serif;color:#ffffff;">
+                        Ready
+                        to Build Your Website?</h2>
+                    <p
+                        style="font-size:16px;opacity:.9;margin-bottom:32px;max-width:520px;margin-left:auto;margin-right:auto;color:#ffffff;">
+                        Get a strategy powered by experience. Our development approach drives real results and lasting
+                        growth.</p>
+                    <a href="contact.html" class="btn-wh">😊 Contact Us</a>
+                    <a href="about.html" class="btn-ol">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="main-footer_bg-color"></div>
+            <div class="main-footer_vector" style="background-image:url(assets/images/icons/vector-3.png)"></div>
+            <div class="auto-container">
+                <div class="inner-container">
+                    <div class="footer-logo"><a href="index.html"><img src="assets/images/footer-logo.svg" alt=""></a>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
+                        <div class="footer-text">We prioritize collaboration <br>With our clients</div>
+                        <div class="footer-social_box">
+                            <a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-discuss"><span class="up-down_animation">let's discuss!</span></div>
+                    <ul class="footer-contact_list d-flex justify-content-end">
+                        <li><a href="mailto:info@testofire.com">info@testofire.com</a></li>
+                        <li><a href="tel:+123-456-789-00">+(123) 456 789 00</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="auto-container">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
+                        <div class="main-footer_copyright">testofire &copy; 2026. All Rights Reserved.</div>
+                        <nav style="display:flex;gap:20px">
+                            <a href="index.html" style="color:#aaa;font-size:13px;text-decoration:none">Home</a>
+                            <a href="services.html" style="color:#aaa;font-size:13px;text-decoration:none">Services</a>
+                            <a href="about.html" style="color:#aaa;font-size:13px;text-decoration:none">About</a>
+                            <a href="contact.html" style="color:#aaa;font-size:13px;text-decoration:none">Contact</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="search-popup">
+            <div class="color-layer"></div><button class="close-search"><span class="fa-xmark"></span></button>
+            <form method="post" action="index.html">
+                <div class="form-group"><input type="search" name="q" placeholder="Search Here" required=""><button
+                        class="fa fa-solid fa-magnifying-glass fa-fw" type="submit"></button></div>
+            </form>
+        </div>
+    </div>
+    <div class="progress-wrap"><svg class="progress-circle svg-content" width="100%" height="100%"
+            viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg></div>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/appear.js"></script>
+    <script src="assets/js/parallax.min.js"></script>
+    <script src="assets/js/tilt.jquery.min.js"></script>
+    <script src="assets/js/jquery.paroller.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/backtotop.js"></script>
+    <script src="assets/js/odometer.js"></script>
+    <script src="assets/js/jquery.countdown.js"></script>
+    <script src="assets/js/parallax-scroll.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/SplitText.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/ScrollSmoother.min.js"></script>
+    <script src="assets/js/typeit.js"></script>
+    <script src="assets/js/jquery.marquee.min.js"></script>
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <script src="assets/js/nav-tool.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/element-in-view.js"></script>
+    <script src="assets/js/color-settings.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        function toggleFaq(btn) { var a = btn.nextElementSibling, s = btn.querySelector('span'); if (a.classList.contains('open')) { a.classList.remove('open'); s.textContent = '+' } else { document.querySelectorAll('.faq-body.open').forEach(function (x) { x.classList.remove('open') }); document.querySelectorAll('.faq-btn span').forEach(function (x) { x.textContent = '+' }); a.classList.add('open'); s.textContent = '−' } }
+    </script>
+</body>
+
+</html>
