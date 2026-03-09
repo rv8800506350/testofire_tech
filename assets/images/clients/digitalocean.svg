@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60">
+  <circle cx="27" cy="30" r="18" fill="#0080FF"/>
+  <path d="M18 34 L24 28 L30 31 L36 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  <text x="128" y="32" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#0080FF">Digital</text>
+  <text x="128" y="46" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#0080FF">Ocean</text>
+</svg>

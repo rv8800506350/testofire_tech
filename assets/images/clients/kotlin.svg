@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60">
+  <rect x="5" y="8" width="44" height="44" rx="8" fill="#7F52FF"/>
+  <text x="27" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF">Kt</text>
+  <text x="125" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#7F52FF">Kotlin</text>
+</svg>
